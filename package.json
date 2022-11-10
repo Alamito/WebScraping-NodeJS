@@ -1,0 +1,23 @@
+{
+  "name": "webscraping-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alamito/WebScraping-NodeJS.git"
+  },
+  "keywords": [],
+  "author": "Alamito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alamito/WebScraping-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Alamito/WebScraping-NodeJS#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
