@@ -62,21 +62,15 @@ const getPageItems = (html) => {
     const $ = cheerio.load(html);
 
     const promiseCallback = (resolve, reject) => {
-        const selectorTitle = '#textContentCount > h3:nth-child(n+9)';
-        const selectorGames = '#textContentCount > ul:nth-child(n+10) > li:nth-child(n+1)'
-        const info = {
-            Titles: [],
-            Day: [],
-            Games: [],
-        }
 
-        info.Titles = getPageText($, '#textContentCount > h3:nth-child(n+9)');
-        info.Day = getPageText($, '#textContentCount > h4:nth-child(n+17)');
-        info.Games = getPageText($, '#textContentCount > ul');
+        const selector = '#textContentCount';
+        const info = $(selector).find('h3:nth-child(n+9), h4, ul').text().trim();
 
-        // writeToFile(info.Title[0], 'SaveFiles/teste.txt');
-
-        console.log(info.Day);
+        fs.writeFile('SaveFiles/Games World Cup.txt', info, { flag: 'w+'}, (error) => {
+            if(error) {
+                console.error(error);
+            }
+        })
         
         resolve(true);
     }
@@ -95,7 +89,6 @@ const getPageText = ($, selector) => {
 
     return arr;
 }
-
 
 /* CASO DESSE ERROR, A SOLUCAO PODERIA SER COLOCAR OS HEADERS*/
 getCachedPage()
