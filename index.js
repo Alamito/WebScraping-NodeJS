@@ -61,10 +61,13 @@ const getPageItems = (html) => {
 
     const $ = cheerio.load(html);
 
-    const promiseCallback = (resolve, reject) => {
+    const promiseCallback = (resolve) => {
 
+        $('h4').prepend("\r\n").append("\r\n");
+        $('h3').prepend("\r\n").append("\r\n");
+        
         const selector = '#textContentCount';
-        const info = $(selector).find('h3:nth-child(n+9), h4, ul').text().trim();
+        const info = $(selector).find('h3:nth-child(n+9), h4:not(.titulo-box-widgets), ul').text().trim();
 
         fs.writeFile('SaveFiles/Games World Cup.txt', info, { flag: 'w+'}, (error) => {
             if(error) {
