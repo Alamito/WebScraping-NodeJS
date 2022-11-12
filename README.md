@@ -1,4 +1,4 @@
-# 🕵️ WebScraping World Cup 🕵️
+# 🕵️ WebScraping World Cup 🏆
 [![NPM](https://img.shields.io/github/license/Alamito/WebScraping-NodeJS)](https://github.com/Alamito/WebScraping-NodeJS/blob/main/LICENCE)
 
 # 📜 Sobre o projeto 📜
