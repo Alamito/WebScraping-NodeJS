@@ -13,7 +13,7 @@ Abaixo está representado um print sobre uma parte das informações que foram c
 
 ![image](https://user-images.githubusercontent.com/102616676/201494313-25837de0-1097-4b6d-a46e-f1c0cf3a0e72.png)
 
-A partir disso, executando o programa é gerado um arquivo chamado "Games World Cup.txt" contendo as informações acima e mais outras sobre a Copa do Mundo 2022.
+A partir disso, ao executar o programa é gerado um arquivo chamado "Games World Cup.txt" contendo as informações acima e mais outras sobre a Copa do Mundo 2022.
 
 ![web scraping](https://user-images.githubusercontent.com/102616676/201494978-9c7fcb83-71c8-47e3-bb24-0b6045364ab0.gif)
 
